@@ -27,9 +27,9 @@ public class IncreaseMobCap {
 	private void setup(final FMLCommonSetupEvent event)
 	{
 		
-		for (EntityClassification classification : EntityClassification.values()) {
-			LOGGER.error(String.format("%s: %d", classification.getName(), classification.getMaxNumberOfCreature()));
-		}
+//		for (EntityClassification classification : EntityClassification.values()) {
+//			LOGGER.error(String.format("%s: %d", classification.getName(), classification.getMaxNumberOfCreature()));
+//		}
 		
 		try {
 			Field mobCap = ObfuscationReflectionHelper.findField(EntityClassification.class, "field_75606_e");
@@ -48,9 +48,9 @@ public class IncreaseMobCap {
 			e.printStackTrace();
 		}
 		
-		for (EntityClassification classification : EntityClassification.values()) {
-			LOGGER.error(String.format("%s: %d", classification.getName(), classification.getMaxNumberOfCreature()));
-		}
+//		for (EntityClassification classification : EntityClassification.values()) {
+//			LOGGER.error(String.format("%s: %d", classification.getName(), classification.getMaxNumberOfCreature()));
+//		}
 		
 	}
 }
